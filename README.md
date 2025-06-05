@@ -86,6 +86,23 @@ Lors de la réalisation des tests fonctionnels, nous avons constatés les probl�
 
 - Lors du scan, tesseract se trompe parfois dans la reconnaissance des caractères.
 
+## Aperçu de l'application
+
+### Interface d'accueil
+![Accueil](assets/HomePage.png)
+
+### Tous les véhicules
+![Tableau](assets/VehiclesTable.png)
+
+### Détails d'un véhicule + inspections
+![Inspection](assets/InspectionPage.png)
+
+### Etats des vehicules
+![Graphique](assets/PieChart.png)
+
+### Toutes les inspections
+![Graphique](assets/BarChart.png)
+
 ## Remarques 
 
 
