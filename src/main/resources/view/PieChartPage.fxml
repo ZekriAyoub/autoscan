@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" styleClass="VboxPie" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="scanmycar.view.PieChartComponent">
+
+    <stylesheets>
+        <URL value="@/style/styleList.css" />
+    </stylesheets>
+    <Label styleClass="PieTitle" text="📊 État des Véhicules" />
+
+    <PieChart fx:id="pieChart" prefHeight="400" prefWidth="400" />
+
+    <HBox alignment="CENTER">
+        <Label styleClass="lb" text="Nombre total de véhicules : " />
+        <Label styleClass="lb" fx:id="countVehicles" text="" />
+    </HBox>
+
+    <Button mnemonicParsing="false" onAction="#switchToHomePage" styleClass="green-button" text="Page d'accueil" />
+
+</VBox>

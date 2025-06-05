@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="scanmycar.view.BarChartComponent">
+
+    <stylesheets>
+        <URL value="@/style/styleList.css" />
+    </stylesheets>
+
+    <ComboBox fx:id="yearSelector"
+              onAction="#onYearSelected"
+              promptText="Sélectionnez une année"
+              styleClass="year-selector"
+    />
+    <BarChart fx:id="inspectionChart" barGap="5" categoryGap="10" minWidth="800" title="Inspections par mois"
+              VBox.vgrow="ALWAYS">
+        <xAxis>
+            <CategoryAxis label="Mois" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Nombre d'inspections" />
+        </yAxis>
+    </BarChart>
+
+    <Button mnemonicParsing="false" onAction="#switchToHomePage" styleClass="green-button" text="Page d'accueil" />
+
+</VBox>

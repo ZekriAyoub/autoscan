@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scanmycar.view.HomeControllerFxml">
+    <stylesheets>
+        <URL value="@/style/styleHome.css" />
+    </stylesheets>
+
+    <center>
+        <VBox alignment="CENTER" prefHeight="603.0" prefWidth="615.0" spacing="40.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="40" right="40" top="40" />
+            </padding>
+            <ImageView fitHeight="250.0" fitWidth="500.0" preserveRatio="true">
+                <image>
+                    <Image url="@/images/steps.png" />
+                </image>
+            </ImageView>
+            <Label maxWidth="565.0" prefHeight="45.0" styleClass="description" text="Votre assistant pour le contrôle technique des véhicules." wrapText="true" />
+
+            <Label maxWidth="565.0" prefHeight="45.0" prefWidth="550.0" styleClass="description" text="Recherchez, vérifiez et ajoutez des informations en toute simplicité !" wrapText="true" />
+
+            <HBox alignment="CENTER" spacing="10">
+                <TextField fx:id="searchField" prefWidth="300" promptText="🔍 Plaque d'immatriculation" />
+                <Button fx:id="searchButton" onAction="#handleBrowseFile" styleClass="green-button" text="🔍" />
+                <Button fx:id="validateButton" onAction="#handleConfirm" styleClass="green-button" text="Valider" />
+            </HBox>
+            <HBox alignment="CENTER" spacing="30.0">
+                <children>
+                       <Button fx:id="showVehiclesButton" onAction="#switchToPageList" prefWidth="250" styleClass="primary-button" text="🚘 Voir la liste des véhicules" />
+                       <Button fx:id="showPieChartButton" onAction="#switchToPagePieChart" prefWidth="250" styleClass="primary-button" text="📊 Voir l'état des véhicules" />
+                       <Button fx:id="showBarChartButton" onAction="#switchToPageBarChart" prefWidth="250" styleClass="primary-button" text="📊 Voir les inspections par mois" />
+
+                </children>
+            </HBox>
+        </VBox>
+    </center>
+   <top>
+         <Label prefHeight="46.0" prefWidth="206.0" styleClass="title" text="🚗 ScanMyCar" BorderPane.alignment="CENTER" />
+   </top>
+   <padding>
+      <Insets bottom="90.0" left="90.0" right="50.0" top="90.0" />
+   </padding>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" prefHeight="70.0" prefWidth="1042.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="40.0" />
+            </padding>
+            <Button fx:id="helpButton" onAction="#showHelpPopup" styleClass="help-button" text="❓ Aide">
+            <HBox.margin>
+               <Insets bottom="10.0" />
+            </HBox.margin></Button>
+         <BorderPane.margin>
+            <Insets bottom="90.0" />
+         </BorderPane.margin>
+        </HBox>
+    </bottom>
+   <right>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <VBox alignment="CENTER" prefHeight="603.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+          <Label fx:id="previewTitle" prefHeight="26.0" prefWidth="288.0" styleClass="description" text="" />
+          <ImageView fx:id="previewImageView" fitHeight="150.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+      </VBox>
+   </left>
+</BorderPane>

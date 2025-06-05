@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" prefHeight="608.0" prefWidth="700.0" spacing="50" stylesheets="@/style/styleForm.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scanmycar.view.FormControllerFxml">
+
+    <VBox fx:id="formContainer" spacing="10" styleClass="form-container">
+        <Label styleClass="title" text="🚗 Ajouter un Véhicule 🛠️" />
+
+        <Label styleClass="title" text="🔢 Plaque relevée :" />
+        <Label fx:id="plateFound" styleClass="plate" text="2-AFP-727" />
+
+        <Label text="🔤 Modèle du véhicule :" />
+        <TextField fx:id="modelField" prefWidth="300" promptText="Ex : Clio 4" />
+
+        <Label text="🏷️ Marque :" />
+        <TextField fx:id="brandField" prefWidth="300" promptText="Ex : Renault" />
+
+        <Label text="🎨 Couleur :" />
+        <TextField fx:id="colorField" prefWidth="300" promptText="Ex : Rouge" />
+
+        <Label text="📆 Année :" />
+        <TextField fx:id="yearField" prefWidth="300" promptText="Ex : 2020" />
+
+        <Label text="👤 Propriétaire :" />
+        <CheckBox fx:id="existCheck" mnemonicParsing="false" text="Déjà enregistré ?" onAction="#isChecked" />
+        <TextField fx:id="ownerField" prefWidth="300" promptText="Ex : Jean Dupont" />
+
+        <Label text="✉️ Email :" />
+        <TextField fx:id="emailField" prefWidth="300" promptText="Ex : jean.dupuis@gmail.com" />
+
+        <Label text="📍 Adresse du propriétaire :" />
+        <TextField fx:id="addressField" prefWidth="300" promptText="Ex : Rue du Labeur 20, 1000 Bruxelles" />
+
+        <Label text="⛽ Type de Carburant :" />
+        <ComboBox fx:id="fuelType" prefWidth="300" promptText="Sélectionnez le type">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Essence" />
+                    <String fx:value="Diesel" />
+                    <String fx:value="Électrique" />
+                    <String fx:value="Hybride" />
+                    <String fx:value="GPL" />
+                    <String fx:value="Hydrogène" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Button fx:id="addVehicleButton" onAction="#handleAddVehicle" prefWidth="300" text="✅ Ajouter le véhicule" />
+    </VBox>
+
+    <VBox alignment="CENTER">
+        <ImageView fitHeight="500.0" fitWidth="400.0" opacity="0.9" preserveRatio="true">
+            <image>
+                <Image url="@/images/background2.png" />
+            </image>
+        </ImageView>
+    </VBox>
+
+</HBox>

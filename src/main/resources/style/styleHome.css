@@ -1,0 +1,77 @@
+/* Styles de base */
+.title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.5, 2, 2);
+}
+
+.description {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+/* Arrière-plan général */
+BorderPane {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2c3e50);
+}
+
+/* Champs de texte */
+TextField {
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #ecf0f1;
+}
+
+.primary-button {
+    -fx-font-size: 14px;
+    -fx-background-color: #f39c12;
+    -fx-text-fill: white;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.primary-button:hover{
+    -fx-background-color: #c2710a;
+}
+
+/* Bouton vert */
+.green-button {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 7px 15px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+/* Effet au survol */
+.green-button:hover {
+    -fx-background-color: #219150;
+}
+
+.help-button {
+    -fx-background-color: #ff1010;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 12;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.3, 0, 2);
+    -fx-border-color: transparent;
+}
+
+.help-button:hover {
+    -fx-background-color: #58ec02;
+}

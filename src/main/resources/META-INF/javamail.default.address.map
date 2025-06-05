@@ -1,0 +1,8 @@
+# File added to prevent the warning:
+# "expected resource not found: /META-INF/javamail.default.address.map"
+#
+# This file is optional and only used for specific custom address mappings
+# in JavaMail (e.g., non-standard address types).
+# It is not used in our ScanMyCar project, but its presence suppresses the warning message.
+
+# No address mapping is required for our ScanMyCar application

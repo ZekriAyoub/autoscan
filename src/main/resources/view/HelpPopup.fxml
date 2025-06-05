@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="scanmycar.view.HelpPopupControllerFxml"
+      spacing="10" styleClass="help">
+    <stylesheets>
+        <URL value="@/style/styleHelp.css"/>
+    </stylesheets>    <Label text="👋 Bonjour cher contrôleur technique !" wrapText="true" />
+    <Label text="Ce logiciel est conçu pour vous faciliter la vie lors de vos inspections." wrapText="true" />
+    <Label text="Besoin d’aide ? Cliquez sur le lien ci-dessous pour discuter avec le support :" wrapText="true" />
+    <Hyperlink fx:id="supportLink" text="https://tawk.to/chat/67f2a4faee365219132ed716/1io5vbsuo" />
+    <Button text="Fermer" onAction="#closeWindow" />
+</VBox>

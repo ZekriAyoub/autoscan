@@ -1,0 +1,42 @@
+.form-container {
+    -fx-padding: 20;
+    -fx-background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 5);
+}
+
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+TextField, ComboBox {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-border-color: #ccc;
+}
+
+Button {
+    -fx-background-color: linear-gradient(to bottom, #0078D7, #005a9e);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+Button:hover {
+    -fx-background-color: linear-gradient(to bottom, #005a9e, #004080);
+}
+
+HBox {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2c3e50);
+}
+
+.plate{
+    -fx-font-size: 16px;
+}
