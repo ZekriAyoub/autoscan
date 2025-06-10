@@ -97,7 +97,7 @@ Lors de la réalisation des tests fonctionnels, nous avons constatés les probl�
 ### Détails d'un véhicule + inspections
 ![Inspection](assets/InspectionPage.png)
 
-### Etats des vehicules
+### État des véhicules
 ![Graphique](assets/PieChart.png)
 
 ### Toutes les inspections
